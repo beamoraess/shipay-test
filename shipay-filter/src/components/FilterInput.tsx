@@ -12,7 +12,7 @@ export function FilterInput({ value, onChange }: FilterInputProps) {
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Digite para filtrar…"
+        placeholder="Digite para filtrar"
         className="
           w-full rounded-xl border border-white/10
           bg-slate-800 px-3 py-2
