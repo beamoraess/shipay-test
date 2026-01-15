@@ -57,12 +57,12 @@ class UserManagement extends React.Component {
     };
   }
 
-// Utilizar setState pra não mutar o state direto com arrow function: this.setState({ newUserName: event.target.value });
+// Não mutar o state diretamente. Atualizar o valor usando this.setState(...), usar arrow function pra não gerar erro
   handleNameChange(event) {
     this.state.newUserName = event.target.value;
   }
 
-// Utilizar setState pra não mutar o state direto com arrow function: this.setState({ newUserEmail: event.target.value });
+// Não mutar o state diretamente. Atualizar o valor usando this.setState(...), usar arrow function pra não gerar erro
   handleEmailChange(event) {
     this.setState({ newUserEmail: event.target.value });
   }
