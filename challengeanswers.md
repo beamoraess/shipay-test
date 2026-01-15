@@ -190,17 +190,17 @@ O que você poderia propor para otimização de performance no caso do consumo d
 
 Para o caso de formulários, eu buscaria esses dados usando Promise.all já com o token reduzindo o tempo de carregamento. Exemplo se tivessemos 3 endpoints:
 
-```
+```JavaScript
 const [segmentsRes, ufsRes, fieldsRes] = await Promise.all([
-apiFetch("/segments"),
-apiFetch("/ufs"),
-apiFetch("/lead/form-fields"),
+    apiFetch("/segments"),
+    apiFetch("/ufs"),
+    apiFetch("/lead/form-fields"),
 ]);
 
 const [segments, ufs, fields] = await Promise.all([
-segmentsRes.json(),
-ufsRes.json(),
-fieldsRes.json(),
+    segmentsRes.json(),
+    ufsRes.json(),
+    fieldsRes.json(),
 ]);
 
 ```
