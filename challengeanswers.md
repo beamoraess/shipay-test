@@ -237,6 +237,8 @@ Faria um BFF por tipo de cliente (multiplos BFFs), porque se as necessidades div
 
 ### Diagrama Simplificado
 
+![Diagrama Simplificado](diagram.png)
+
 ### Distribuição de Lógicas e Responsabilidades:
 
 Para cada um dos exemplos de lógica/tarefa abaixo, indique onde você acredita que ela seria predominantemente implementada (no cliente, no BFF ou nos microsserviços de back-end) e justifique brevemente
